@@ -12,12 +12,33 @@
         background-color: #f0f0f0;
         color: #333;
       }
+
       header {
         background-color: #e74c3c;
         color: white;
-        padding: 1rem;
-        text-align: center;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
       }
+
+      header .logo {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header nav a {
+        color: white;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
       .container {
         max-width: 1200px;
         margin: 2rem auto;
@@ -26,11 +47,13 @@
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
+
       .search-bar {
         display: flex;
         justify-content: center;
         margin-bottom: 2rem;
       }
+
       .search-bar input {
         width: 70%;
         padding: 0.5rem;
@@ -38,6 +61,7 @@
         border-radius: 4px 0 0 4px;
         outline: none;
       }
+
       .search-bar button {
         padding: 0.5rem 1rem;
         background-color: #2ecc71;
@@ -46,12 +70,15 @@
         border-radius: 0 4px 4px 0;
         cursor: pointer;
       }
+
       .search-bar button:hover {
         background-color: #27ae60;
       }
+
       .song-list {
         margin-top: 1rem;
       }
+
       .song-item {
         padding: 1rem;
         margin-bottom: 1rem;
@@ -61,16 +88,20 @@
         justify-content: space-between;
         align-items: center;
       }
+
       .song-item:nth-child(even) {
         background-color: #f9f9f9;
       }
+
       .song-item a {
         text-decoration: none;
         color: #333;
       }
+
       .song-item a:hover {
         text-decoration: underline;
       }
+
       footer {
         background-color: #95a5a6;
         color: white;
@@ -82,8 +113,14 @@
   </head>
   <body>
     <header>
-      <h1>Musicflow</h1>
-      <p>Enjoy your favorite music anytime.</p>
+      <div class="logo">
+        <h1 style="margin: 0;">Musicflow</h1>
+        <p style="margin: 0;">Enjoy your favorite music anytime.</p>
+      </div>
+      <nav>
+        <a href="https://musicflow99.github.io/artists.html">Artists</a>
+        <a href="https://musicflow99.github.io/trending.html">Trending</a>
+      </nav>
     </header>
 
     <div class="container">
@@ -137,14 +174,13 @@
             artist: "Bruno Mars",
             title: "APT.",
             url: "https://musicflow99.github.io/rose&brunomars-apt.html",
-           
           },
           {
             artist: "Bruno Mars",
             title: "Die With a Smile",
             url: "https://musicflow99.github.io/ladygaga&brunomars-diewithasmile.html",
-          }, 
-          { 
+          },
+          {
             artist: "Tyler The Creator",
             title: "St. Chroma",
             url: "https://musicflow99.github.io/tylerthecreator-stchroma.html",
@@ -155,12 +191,11 @@
             url: "https://musicflow99.github.io/tylerthecreator-sticky.html",
           },
           {
-        
             artist: "Travis Scott",
             title: "FE!N",
             url: "https://musicflow99.github.io/travisscott-fein.html",
           },
-          ]
+        ];
 
         const filteredSongs = songs.filter(
           (song) =>
@@ -182,4 +217,5 @@
       }
     </script>
   </body>
-</html>
+
+            
