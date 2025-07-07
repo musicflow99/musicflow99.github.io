@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Artists - Musicflow</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      header {
+        background-color: #e74c3c;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      header .logo {
+        display: flex;
+        flex-direction: column;
+      }
+
+      header nav a {
+        color: white;
+        margin-left: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      ul.artist-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul.artist-list li {
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        transition: background-color 0.2s;
+      }
+
+      ul.artist-list li:hover {
+        background-color: #ececec;
+      }
+
+      ul.artist-list li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      ul.artist-list li a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background-color: #95a5a6;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 style="margin: 0;">Musicflow</h1>
+        <p style="margin: 0;">Discover all your favorite artists.</p>
+      </div>
+      <nav>
+        <a href="https://musicflow99.github.io/">Home</a>
+        <a href="https://musicflow99.github.io/trending.html">Trending</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>All Artists</h2>
+      <ul class="artist-list">
+        <li><a href="https://musicflow99.github.io/ksi">KSI</a></li>
+        <li><a href="https://musicflow99.github.io/rickastley">Rick Astley</a></li>
+        <li><a href="https://musicflow99.github.io/gorillaz">Gorillaz</a></li>
+        <li><a href="https://musicflow99.github.io/brunomars">Bruno Mars</a></li>
+        <li><a href="https://musicflow99.github.io/ladygaga">Lady Gaga</a></li>
+        <li><a href="https://musicflow99.github.io/tylerthecreator">Tyler The Creator</a></li>
+        <li><a href="https://musicflow99.github.io/travisscott">Travis Scott</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Musicflow. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
